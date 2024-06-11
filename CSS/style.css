@@ -78,10 +78,7 @@ header {
     position: relative;
 }
 
-.introduction h1,
-.introduction h4 {
-    font-size: 2em;
-}
+
 
 .text-main {
     font-size: 3em;
@@ -94,7 +91,7 @@ header {
 }
 
 .text-main:hover {
-    font-size: 3.5em; /* Tamaño de fuente más grande al pasar el mouse */
+    font-size: 4em; /* Tamaño de fuente más grande al pasar el mouse */
 }
 
 @keyframes gradientAnimation {
@@ -319,5 +316,26 @@ header {
     }
     .arrows {
         top: 10%;
+    }
+}
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .sesion {
+        margin-top: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
     }
 }
