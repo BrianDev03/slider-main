@@ -250,22 +250,31 @@ header {
 }
 
     /*descripcion*/
-
+    .text-descrip {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        margin-left : 20px;
+    }
+    
     .descriptions {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 50px;
     }
-
+    
     .description {
-        width: 300px;
-        padding: 20px;
-        background-color: #f0f0f0;
+        width: 300px; /* Ancho predeterminado */
+        height: 300px; /* Alto predeterminado */
+        padding: 10px;
+        background-color: #ffffff;
         border-radius: 10px;
         text-align: center;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin: 15px;
     }
+    
 
     .descriptions {
         display: flex;
@@ -293,20 +302,49 @@ header {
         font-size: 36px;
     }
 
-    h3 {
+    .descriptions h3 {
         color: #333;
         font-size: 24px;
         margin-bottom: 10px;
     }
 
-    p {
-        color: #fff9f9;
+    .descriptions p {
+        color: #010000;
         font-size: 16px;
         line-height: 1.6;
     }
 
 
+    /*footer*/
+    footer {
+        
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
 
+    
+    .copyright { 
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    @media (max-width: 635px) {
+        .copyright {
+            font-size: 12px;
+            bottom: 5px;
+        }
+    }
+    
+    
+
+/*resposive*/
 @media screen and (max-width: 678px) {
     .thumbnail {
         justify-content: start;
