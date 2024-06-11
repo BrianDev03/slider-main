@@ -81,16 +81,20 @@ header {
 .introduction h1,
 .introduction h4 {
     font-size: 2em;
-    transition: font-size 0.3s ease-in-out; /* Agrega transición para el cambio de tamaño de fuente */
 }
 
 .text-main {
     font-size: 3em;
+    transition: font-size 0.3s ease-in-out; /* Agrega transición para el cambio de tamaño de fuente */
     background-image: linear-gradient(to right,#244c7f, #ffdb9a, #f5f5f5, #dbf2ff, #a7d8ff, #64b5f6, #2780e3, #2662b0, #244c7f); /* Colores del gradiente */
     -webkit-background-clip: text; /* Aplica el gradiente de color al texto */
     -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente para que el gradiente se muestre */
     background-size: 200% auto; /* Define el tamaño del fondo del gradiente */
     animation: gradientAnimation 3s linear infinite; /* Animación del gradiente */
+}
+
+.text-main:hover {
+    font-size: 3.5em; /* Tamaño de fuente más grande al pasar el mouse */
 }
 
 @keyframes gradientAnimation {
@@ -101,8 +105,6 @@ header {
         background-position: 100% 50%; /* Posición final del gradiente */
     }
 }
-
-
 
 
 
