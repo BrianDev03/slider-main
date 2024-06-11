@@ -183,7 +183,7 @@ header {
 }
 
 .slider .list .item.active p:nth-child(3) {
-    animation-duration: 5.3s; /* tiempo en cada diapositica*/
+    animation-duration: 1.3s; /* tiempo en cada diapositica*/
 }
 
 .arrows {
